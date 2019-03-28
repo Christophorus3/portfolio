@@ -1,18 +1,17 @@
 $primary-color: #338fb4;
 $secondary-color: #eece1e;
 $show-home-image: true;
-$bg-image: url(../img/background.jpg);
+$bg-image: url(../img/background1.jpg);
 $bg-opacity: 0.7;
 
-@mixin easeOut {
+@mixin easeIn {
   transition: all 0.5s ease-in;
 }
 
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $bg-image fixed;
-      -webkit-background-size: cover;
+      background: $bg-image center fixed;
       background-size: cover;
 
       &:after {
@@ -40,7 +39,7 @@ $bg-opacity: 0.7;
 
 // Media query mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 640px) {
      @content;
   }
 }

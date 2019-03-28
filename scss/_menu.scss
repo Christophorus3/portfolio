@@ -6,14 +6,14 @@
   right: 35px;
   top: 35px;
   cursor: default;
-  @include easeOut;
+  @include easeIn;
 
   .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
-    @include easeOut;
+    @include easeIn;
   }
 
   //rotate into x
@@ -65,7 +65,7 @@
     background: darken($primary-color, 5);
     list-style: none;
     transform: translate(100%, 0);
-    @include easeOut;
+    @include easeIn;
 
     &.show {
       transform: translate(0, 0);
@@ -75,7 +75,7 @@
   &-branding {
     background: $primary-color;
     transform: translate(-100%, 0);
-    @include easeOut;
+    @include easeIn;
 
     &.show {
       transform: translate(0, 0);
@@ -94,7 +94,7 @@
 
   .nav-item {
     transform: translate(0, 100vh);
-    @include easeOut;
+    @include easeIn;
 
     &.show {
       transform: translate(0, 0);
@@ -114,7 +114,7 @@
     font-weight: 300;
     color: set-text-color($primary-color);
     text-decoration: none;
-    @include easeOut;
+    @include easeIn;
 
     &:hover {
       color: $secondary-color;
